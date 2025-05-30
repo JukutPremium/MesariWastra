@@ -1,16 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const ClashDisplay = localFont({
+  src: [
+    {
+      path: './font/ClashDisplay/ClashDisplay-Extralight.otf',
+      weight: '100',
+      
+    },
+    {
+      path: './font/ClashDisplay/ClashDisplay-Light.otf',
+      weight: '200',
+    },
+    {
+      path: './font/ClashDisplay/ClashDisplay-Regular.otf',
+      weight: '300',
+    },
+    {
+      path: './font/ClashDisplay/ClashDisplay-Medium.otf',
+      weight: '400',
+    },
+    {
+      path: './font/ClashDisplay/ClashDisplay-Semibold.otf',
+      weight: '500',
+    },
+    {
+      path: './font/ClashDisplay/ClashDisplay-Bold.otf',
+      weight: '600',
+    },
+  ],
+    variable: '--font-clash-display',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ClashDisplay.variable} antialiased`}
       >
         {children}
       </body>
