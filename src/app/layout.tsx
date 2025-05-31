@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ClashDisplay.variable} antialiased`}
+        className={`${ClashDisplay.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>
