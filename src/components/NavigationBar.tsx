@@ -13,10 +13,10 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className="flex w-full z-10 absolute">
+    <nav className="flex w-full z-10 sticky top-0">
       <div className="wrapper flex justify-between items-center w-full px-4 py-3 md:px-16 md:py-5">
         {/* Left Links - Hidden on mobile */}
-        <div className="hidden md:flex link md:space-x-8 lg:space-x-14 flex-shrink-0">
+        <div className="hidden md:flex link md:space-x-8 lg:space-x-24 flex-shrink-0">
           <Link
             href="#"
             className="nav-link font-poppins font-semibold text-base lg:text-lg xl:text-xl hover:opacity-70 transition-opacity whitespace-nowrap"
@@ -27,7 +27,7 @@ const NavigationBar = () => {
             href="#"
             className="nav-link font-poppins font-semibold text-base lg:text-lg xl:text-xl hover:opacity-70 transition-opacity whitespace-nowrap"
           >
-            ABOUT
+            PROJECT
           </Link>
         </div>
 
@@ -39,12 +39,12 @@ const NavigationBar = () => {
         </div>
 
         {/* Right Links - Hidden on mobile */}
-        <div className="hidden md:flex link md:space-x-8 lg:space-x-14 flex-shrink-0">
+        <div className="hidden md:flex link md:space-x-8 lg:space-x-24 flex-shrink-0">
           <Link
             href="#"
             className="nav-link font-poppins font-semibold text-base lg:text-lg xl:text-xl hover:opacity-70 transition-opacity whitespace-nowrap"
           >
-            PROJECT
+            ABOUT
           </Link>
           <Link
             href="#"
